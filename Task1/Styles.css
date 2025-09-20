@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+}
+
+/* Header */
+#header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation bar */
+#nav {
+    background-color: #333;
+    overflow: hidden;
+}
+#nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+#nav a:hover {
+    background-color: #575757;
+}
+
+/* Wrapper for sidebar + content */
+#wrapper {
+    overflow: hidden; /* чтобы футер не залезал наверх */
+    background: white;
+    min-height: 400px;
+}
+
+/* Sidebar */
+#sidebar {
+    float: left;
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Main content */
+#content {
+    float: left;   /* вместо right — так они лучше стыкуются */
+    width: 75%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+#footer {
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

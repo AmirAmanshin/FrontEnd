@@ -1,0 +1,71 @@
+  @font-face {
+      font-family: 'Dobra Black';
+      src: url('fonts/Dobra-Black.woff2') format('woff2'),
+           url('fonts/Dobra-Black.woff2') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+  body {
+        background-color: rgb(113, 185, 183);
+    }
+
+    .content {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 24px;
+        background: rgba(255,255,255,0.08);
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        border: 2px solid #fff;
+        display: block;
+        margin: 0 auto 18px auto;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        color: rgb(255, 207, 33);
+        text-align: center;
+        font-family: 'Dobra Black', sans-serif;
+        margin-bottom: 12px;
+    }
+    h2 {
+        font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #f0f0f0;
+    }
+
+    ul {
+        list-style-type: square;
+        padding-left: 22px;
+        margin-top: 12px;
+    }
+    li {
+        margin-bottom: 7px;
+        color: #f8e9b0;
+    }
+
+    a {
+        color: #ffd021;
+        text-decoration: underline;
+        transition: color 0.2s;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+    a:hover, .btn:hover {
+        color: #fff;
+        background: #ffd021;
+        text-decoration: none;
+    }
+    
