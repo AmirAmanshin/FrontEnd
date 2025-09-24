@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Rockwell';
+    src: url('fonts/rockwellmt.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+.header {
+    background-color: #000;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.center-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Rockwell', sans-serif;
+    margin: 0;
+}
+
+.contacts h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: right;
+    font-family: 'Rockwell', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background: black;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 10s, box-shadow 10s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card_special {
+    background: black;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    display: flex;
+    flex: 1;
+    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 10s, box-shadow 10s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card_special:hover {
+    transform: translate(0, -10px) rotate(-97deg) scale(2);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translate(0, -10px) rotate(90deg) scale(2);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card_special img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card_special button {
+    margin: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #86f3ff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card_special h3 {
+    margin: 16px 0 8px;
+}
+
+.card_special p {
+    padding: 0 16px;
+    flex-grow: 1;
+    color: #555;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 16px 0 8px;
+}
+
+.card p {
+    padding: 0 16px;
+    flex-grow: 1;
+    color: #555;
+}
+
+.card button {
+    margin: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #86f3ff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card_special button:hover {
+    background-color: #00c8e0;
+}
+
+.card button:hover {
+    background-color: #00c8e0;
+}
+
+
+
+
+
+.layout {
+  display: grid;
+  grid-template-rows: 120px 1fr 60px;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #f2f2f2;
+  padding: 20px;
+  font-family: 'Rockwell', sans-serif;
+}
+
+.main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-family: 'Rockwell', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(0.95);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+  opacity: 1;
+}
